@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+
+  db:
+    image: postgres:latest
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: pg_password
+      POSTGRES_DB: pd_data
+    ports:
+      - "5432:5432"
